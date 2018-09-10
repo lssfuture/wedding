@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="https://at.alicdn.com/t/font_806437_3u97mqx1jw9.css">
 	<link rel="stylesheet" href="css/case.css">
+	<script src="js/animate.js"></script>
+	<link rel="shortcut icon" href="img/favicon.ico">
 	<title>定制婚礼</title>
 </head>
 <body>
@@ -186,3 +188,11 @@
 	 <!-- 返回顶部结束 -->
 </body>
 </html>
+<script>
+	// 返回顶部
+    let back=document.querySelectorAll(".sort ul li")[2];
+    console.log(back);
+    back.onclick=function(){
+        animate(document.documentElement,{scrollTop:0},600);
+    } 
+</script>

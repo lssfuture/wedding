@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="https://at.alicdn.com/t/font_806437_3u97mqx1jw9.css">
 	<link rel="stylesheet" href="css/team.css">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<script src="js/animate.js"></script>
 	<title>服务团队</title>
 </head>
 <body>
@@ -79,17 +81,23 @@
 			<div class="title3">IT'S A SWEET CAUSE WE'VE HAD，PPROJECT SERVICES TEAM ,PERFECT WEDDING</div>
 			<ul class="row">
 				<li class="col-xs-12 col-sm-4">
-					<div class="pic"></div>
+					<div class="pic">
+						<div class="cover"></div>
+					</div>
 					<p>超高品质</p>
 					<h5>一直注重服务品质，严格的服务团队普升机制<br>让新人满意，认可是员工普升的基本准则</h5>
 				</li>
 				<li class="col-xs-12 col-sm-4">
-					<div class="pic"></div>
+					<div class="pic">
+						<div class="cover"></div>
+					</div>
 					<p>极细细节</p>
 					<h5>是行业内推出套餐内所有产品<br>的内容统一标准化</h5>
 				</li>
 				<li class="col-xs-12 col-sm-4">
-					<div class="pic"></div>
+					<div class="pic">
+						<div class="cover"></div>
+					</div>
 					<p>性价化</p>
 					<h5>坚持做性价比超高的婚礼，做婚礼绝不用预算<br>区分质量，态度，坚持高品质服务。</h5>
 				</li>
@@ -146,3 +154,29 @@
 	 <!-- 返回顶部结束 -->
 </body>
 </html>
+<script>
+	// 返回顶部
+    let back=document.querySelectorAll(".sort ul li")[2];
+    console.log(back);
+    back.onclick=function(){
+        animate(document.documentElement,{scrollTop:0},600);
+    } 
+
+
+    // 遮罩
+    let box=document.querySelectorAll(".our ul li .pic");
+    let cover=document.querySelectorAll(".our ul li .cover");
+    console.log(box,cover);
+    //鼠标移入，遮罩显示
+    for(let i=0;i<box.length;i++){
+    	box[i].onmouseenter=function () {
+        	cover[i].style.display="block";
+    	}
+    	box[i].onmouseleave=function () {
+        cover[i].style.display="none";
+    	}
+    }
+    
+    
+
+</script>
