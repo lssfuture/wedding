@@ -2,7 +2,7 @@
 * @Author: 我的文档
 * @Date:   2018-08-22 18:00:15
 * @Last Modified by:   我的文档
-* @Last Modified time: 2018-09-06 19:08:47
+* @Last Modified time: 2018-09-15 16:17:44
 */
 
 header{
@@ -183,57 +183,64 @@ header .dh ul li:nth-child(1) a {
 	padding-left: 15px;
 	padding-right: 15px;
 }
-.Portfolio ul li:nth-child(1) .pic{
+.Portfolio ul li img{
 	width: 100%;
 	height:100%; 
-	background-image: url('../img/haiwai1.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
+	cursor: pointer;
 }
-.Portfolio ul li:nth-child(2) .pic{
-	width: 100%;
-	height:100%; 
-	background-image: url('../img/shinei1.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
+.Portfolio .mask{
+    width: 800px;
+    height: 400px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0 0 0 1000px  rgba(0,0,0,0.6);
+    transform: scale(0);
+    /* transition: all .5s; */
+    z-index: 99;
+    display: none;
 }
-.Portfolio ul li:nth-child(3) .pic{
-	width: 100%;
-	height:100%; 
-	background-image: url('../img/huwai1.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
+.Portfolio .hot{
+    transform: scale(1);
+ }
+.Portfolio .mask img{
+    width: 100%;
+    height: 100%;
 }
-.Portfolio ul li:nth-child(4) .pic{
-	width: 100%;
-	height:100%; 
-	background-image: url('../img/haiwai2.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-}
-.Portfolio ul li:nth-child(5) .pic{
-	width: 100%;
-	height:100%; 
-	background-image: url('../img/shinei2.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-}
-.Portfolio ul li:nth-child(6) .pic{
-	width: 100%;
-	height:100%; 
-	background-image: url('../img/huwai2.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-}
-.Portfolio ul li  a .pic:hover{
-	transform: scaleY(1.05);
-	transition: 0.5s;
+.Portfolio .mask .rightbtn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0,0.3);
+    font-size: 26px;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    position: fixed;
+    right:0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    }
+.Portfolio .mask .leftbtn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0,0.3);
+    font-size: 26px;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    position: fixed;
+    left:0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 .activity{
 	width: 100%;
@@ -265,57 +272,64 @@ header .dh ul li:nth-child(1) a {
 	padding-left: 15px;
 	padding-right: 15px;
 }
-.activity ul li:nth-child(1) .pic{
+.activity ul li img{
 	width: 100%;
 	height:100%; 
-	background-image: url('../img/liyihuodong/bai1.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
+	cursor: pointer;
 }
-.activity ul li:nth-child(2) .pic{
-	width: 100%;
-	height:100%; 
-	background-image: url('../img/liyihuodong/wan1.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
+.activity .mask{
+    width: 800px;
+    height: 400px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0 0 0 1000px  rgba(0,0,0,0.6);
+    transform: scale(0);
+    /* transition: all .5s; */
+    z-index: 99;
+    display: none;
 }
-.activity ul li:nth-child(3) .pic{
-	width: 100%;
-	height:100%; 
-	background-image: url('../img/liyihuodong/jie1.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
+.activity .hot{
+    transform: scale(1);
+ }
+.activity .mask img{
+    width: 100%;
+    height: 100%;
 }
-.activity ul li:nth-child(4) .pic{
-	width: 100%;
-	height:100%; 
-	background-image: url('../img/liyihuodong/bai2.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-}
-.activity ul li:nth-child(5) .pic{
-	width: 100%;
-	height:100%; 
-	background-image: url('../img/liyihuodong/wan2.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-}
-.activity ul li:nth-child(6) .pic{
-	width: 100%;
-	height:100%; 
-	background-image: url('../img/liyihuodong/bai3.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-}
-.activity ul li  a .pic:hover{
-	transform: scaleY(1.05);
-	transition: 0.5s;
+.activity .mask .rightbtn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background:rgba(0,0,0,0.3);
+    font-size: 26px;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    position: fixed;
+    right:0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    }
+.activity .mask .leftbtn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+     background:rgba(0,0,0,0.3);
+    font-size: 26px;
+    color:#fff;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    position: fixed;
+    left:0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 .team{
 	width: 100%;
@@ -743,6 +757,12 @@ footer{
 		height: 100%;
 		float: left;
 		display: inline;
+	}
+	.Portfolio .mask{
+		display: block;
+	}
+	.activity .mask{
+		display: block;
 	}
 }
 /* 大屏幕 col-lg- >1200px */
